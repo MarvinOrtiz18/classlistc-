@@ -139,12 +139,12 @@ namespace FrontEndShopSolution
                 return true;
             }
 
-            // Procesar la compra: marcar el articulo como vendido
+            // Procesar la compra: marcar el articulo como vendido, cambiamos el valor de sold a true
             items[index] = (selected.id, selected.title, selected.description, selected.price, true);
 
             // Informar al usuario sobre la compra exitosa
             Console.WriteLine($"Compra realizada: '{selected.title}' por ${selected.price:F2}. ¡Gracias por su compra!");
-
+ 
             return true;
         }
     }
